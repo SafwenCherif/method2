@@ -6,7 +6,10 @@ def check_password_strength(password):
     has_digit = False
     has_punctuation = False
 
-
+    if len(password) >= 8:
+        print("Length: OK")
+    else:
+        print("Length: Too short (must be at least 8 characters)")
 
     for char in password:
         if char.isupper():
